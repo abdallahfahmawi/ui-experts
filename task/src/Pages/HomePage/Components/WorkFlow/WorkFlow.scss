@@ -1,0 +1,34 @@
+@import "../../../../assests/styles/variables.scss";
+@import "../../../../assests/styles/breakpoints.scss";
+
+.work-flow-margin {
+  margin: 0 130px;
+  @include breakpoint(medium) {
+    margin: 0 0;
+  }
+  .image-sectionHolder {
+    @include breakpoint(medium) {
+      display: none;
+    }
+  }
+}
+
+.workflowimge-holder img {
+  width: 100%;
+}
+.workflow-items-holder {
+  @include breakpoint(large) {
+    .workflow-items-holder {
+      margin-top: 60px;
+    }
+  }
+
+  h5 {
+    font-size: 17px;
+    color: $titlesColor;
+  }
+  p {
+    font-size: 14px;
+    color: $paragraphCoor;
+  }
+}

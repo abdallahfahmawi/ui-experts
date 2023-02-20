@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap'); 
+
+
+
+//fonts
+$titleLato : "lato";
+$para : "Robot";
+
+// fonts sizes
+$titleSize : 40px;
+$paraSize : 15px;
+
+// spacing
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+// colors
+$blue: #3D37F1;
+$white: #fff;
+$titlesColor :#5A5454;
+$paragraphCoor : #747474;
+$dark: rgb(29, 29, 29);
+
+$primary: rgb(162, 162, 246);
+$bg: rgb(244, 244, 255);
+
+// background colors 
+$orange :#FF8923;
+$sectionbackground :#F8F8F8;
+
+
+// border radius
+$borderRadius: 24px;
+
+
+// header height
+$headerHeight: 100px;
+
+// box shadows
+$wavButtonShadow : 0px 15px 32px -13px rgba(61,55,241,0.72);
+
+$sizeMd : 768px;
+
+@mixin Button ($backgroundColor, $maxWidth , $boxShadow){
+    background-color: $backgroundColor;
+    color: $white;
+    padding: 10px 40px 10px 32px;
+    border-radius: 24px;
+    font-size: 16px;
+    border: none;
+    box-shadow: $boxShadow;
+    max-width: $maxWidth;
+    font-family: $titleLato ;
+}
+
+@mixin titleText {
+    font-size: $titleSize;
+    font-family: $titleLato;
+    font-weight: 600;
+    color: $titlesColor;
+}
+

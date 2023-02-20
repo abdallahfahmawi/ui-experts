@@ -1,0 +1,31 @@
+.carousel-images {
+    width: 100%;
+}
+.carousel-item {
+    padding:  0px 15px;
+}
+
+.carousel-indicators {
+    margin-left: 0!important;
+    bottom: -50px!important;
+   
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #3d37f1!important;
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 8px!important;
+    height: 8px!important;
+    margin-right: 3px;
+    margin-left: 3px;
+    border-top: 10px solid transparent!important; 
+    border-bottom: 10px solid transparent!important; 
+    border-radius: 100%;
+    
+}
+.carousel-indicators .active {
+    opacity: 1;
+    width: 36px!important;
+    height: 8px!important;
+    border-radius: 13px!important;
+}

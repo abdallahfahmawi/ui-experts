@@ -1,0 +1,159 @@
+/*.navbar-brand {
+    img {
+        max-width: 160px;
+    }
+}
+
+.navbar-collapse {
+
+    background-image: url('');
+    flex-grow: unset!important;
+
+    a {
+        margin-right: 40px;
+    }
+    button {
+       ///* background-color: #FF8923;
+      //  color: #ffff;
+       // border: none;
+       // border-radius: 50px;
+        padding: 8px 50px!important;
+        
+    @include Button($orange ,none,"" );
+    }
+}*/
+@import "../../assests/styles/variables.scss";
+@import "../../assests/styles/breakpoints.scss";
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+
+  transition: 0.3s ease all;
+
+  &__content {
+    overflow: hidden;
+    color: $white;
+    margin: 0 auto;
+    max-width: 1920px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+
+    &__logo {
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: $white;
+    }
+
+    &__nav {
+      top: 0;
+      right: 100%;
+      bottom: 0;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: rgb(255 255 255 / 90%);
+      backdrop-filter: blur(2px);
+      transform: translate(0);
+      transition: 0.3s ease transform;
+
+      @include breakPoint(lg) {
+        transform: none;
+        flex-direction: row;
+        background: transparent;
+        width: auto;
+        height: 100%;
+        position: static;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-lg;
+        @include breakPoint(lg) {
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 0;
+          margin-right: calc(0.5rem + #{$spacing-md});
+        }
+        li {
+          &:not(:last-child) {
+            margin-bottom: $spacing-lg;
+            @include breakPoint(lg) {
+              margin-bottom: 0;
+              margin-right: $spacing-md;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: $dark;
+            padding: 0.75rem 1.25rem;
+            border-radius: $borderRadius;
+            transition: 0.3s ease all;
+
+            &:hover {
+              color: $blue;
+            }
+            &:active {
+              border-radius: calc(#{$borderRadius} + 6px);
+              background: linear-gradient(rgba($white, 0.1), rgba($white, 0.2));
+            }
+          }
+        }
+      }
+
+      &.isMenu {
+        transform: translate(100%);
+      }
+    }
+
+    &__toggle {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      transition: 0.3s ease all;
+      position: relative;
+      color: $blue;
+
+      &:hover {
+        color: $primary;
+      }
+
+      @include breakPoint(lg) {
+        display: none;
+      }
+    }
+  }
+  button {
+    ///* background-color: #FF8923;
+    //  color: #ffff;
+    // border: none;
+    // border-radius: 50px;
+    padding: 8px 50px !important;
+    &:hover,
+    &:active {
+      background-image: linear-gradient(
+        to left,
+        #a5a2f6,
+        #8e89f7,
+        #7771f6,
+        #5e57f4,
+        #413bf1
+      );
+    }
+
+    @include Button($orange, none, "");
+  }
+}

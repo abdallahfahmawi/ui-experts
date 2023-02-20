@@ -1,0 +1,22 @@
+@import "../../../../assests/styles/breakpoints.scss";
+
+.clientsList {
+  list-style: none;
+  display: flex;
+  li {
+    flex-basis: 20%;
+  }
+  img {
+    width: 75%;
+    @include breakpoint(large) {
+      width: 85%;
+    }
+  }
+}
+
+.clientsHolder {
+  margin-top: 100px;
+  @include breakpoint(medium) {
+    margin-top: 55px;
+  }
+}

@@ -1,0 +1,41 @@
+@import "../../../../assests/styles/variables.scss";
+@import "../../../../assests/styles/breakpoints.scss";
+
+.section {
+  margin-top: 100px;
+}
+.image-col {
+  @include breakpoint(medium) {
+    display: none;
+  }
+  .homepage-banner {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.homepage-info {
+  h3 {
+    font-size: 40px;
+    color: $titlesColor;
+    font-family: $titleLato;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: $paraSize;
+    color: $paragraphCoor;
+    margin-top: 20px;
+  }
+}
+.carousel-indicators {
+  bottom: -61px;
+}
+.wave-buton {
+  @include Button($blue, none, $wavButtonShadow);
+  margin-top: 30px;
+
+  img {
+    width: 20px;
+    margin-right: 8px;
+  }
+}

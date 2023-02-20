@@ -1,0 +1,17 @@
+@import "../../../../assests/styles/variables.scss";
+@import "../../../../assests/styles/breakpoints.scss";
+
+.blogSection {
+  margin-top: 100px;
+  background-color: #fbfcfd;
+}
+.BlogHeader {
+  h3 {
+    color: $titlesColor;
+    font-family: $titleLato;
+  }
+  p {
+    font-family: $para;
+    color: $paragraphCoor;
+  }
+}

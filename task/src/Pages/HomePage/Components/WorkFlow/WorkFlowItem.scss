@@ -1,0 +1,53 @@
+@import "../../../../assests/styles/variables.scss";
+@import "../../../../assests/styles/breakpoints.scss";
+.item-number {
+  margin-right: 20px;
+  align-items: center;
+  text-align: center;
+  line-height: 2.3;
+  span {
+    color: $white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 35px;
+  }
+}
+
+.navy-blue-item span {
+  background-color: #3d37f1;
+}
+.light-purple-item span {
+  background-color: #9997df;
+}
+.orang-item span {
+  background-color: #ffba3f;
+}
+.light-red-item span {
+  background-color: #e66e6e;
+}
+.blue-item span {
+  background-color: #66659f;
+}
+.orange-dark-item span {
+  background-color: #f17637;
+}
+.light-green-item span {
+  background-color: #37f1be;
+}
+.pink-item span {
+  background-color: #f137e5;
+}
+.red-item span {
+  background-color: #f13d37;
+}
+.item-description {
+  p:first-child {
+    font-size: 17px;
+    margin: 0 0 2px 0;
+    font-weight: 500;
+  }
+  p {
+    font-size: 13px;
+    color: $paragraphCoor;
+  }
+}

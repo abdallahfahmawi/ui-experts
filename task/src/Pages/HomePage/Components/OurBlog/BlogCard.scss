@@ -1,0 +1,60 @@
+@import "../../../../assests/styles/variables.scss";
+@import "../../../../assests/styles/breakpoints.scss";
+
+.Blog-link {
+  text-decoration: none;
+  color: #000;
+}
+.cardHolder {
+  box-shadow: 0px 4px 9px 0px rgb(0 0 0 / 46%);
+  @include breakpoint(medium) {
+    margin: 15px 0;
+  }
+}
+.imageHolder {
+  background-image: url("../../../../assests/images/conference.png");
+  background-position: center;
+  background-size: cover;
+  height: 208px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(0);
+}
+.descriptionBlogCard {
+  padding: 10px 30px 20px 30px;
+  @include breakpoint(large) {
+    padding: 10px 22px;
+  }
+  @include breakpoint(medium) {
+    padding: 22px 22px;
+  }
+
+  p:first-child {
+    font-size: 16px;
+    color: $titlesColor;
+    @include breakpoint(large) {
+      font-size: 12px;
+    }
+    @include breakpoint(medium) {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: 13px;
+    color: $paragraphCoor;
+    @include breakpoint(large) {
+      font-size: 10px;
+    }
+    @include breakpoint(medium) {
+      font-size: 15px;
+    }
+  }
+  img {
+    max-width: 33px;
+  }
+}
+/*.imageHolder img {
+    width: 100%;
+    
+}*/

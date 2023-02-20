@@ -1,0 +1,64 @@
+@import "../../../../assests/styles/variables.scss";
+@import "../../../../assests/styles/breakpoints.scss";
+
+.review-holder {
+  background-color: #0c0f32;
+  color: #ffff;
+  padding: 20px 0;
+}
+.review-title p,
+.review-footer p {
+  font-size: 12px;
+  color: #2e304e;
+  font-weight: 700;
+}
+.reviewer-image {
+  margin: 100px 0 45px 0;
+}
+.image-holder {
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+
+  img {
+    max-width: 100px;
+  }
+}
+
+.rate {
+  background-color: #ff992e;
+  padding: 5px;
+  border-radius: 100%;
+  font-size: 12px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+}
+.comment {
+  text-align: center;
+  margin-bottom: 10px;
+  p {
+    font-size: 12px;
+  }
+}
+
+/* end of the profile section*/
+
+.reviewer-name {
+  text-align: center;
+  color: #8f8bff;
+  margin-bottom: 90px;
+  p {
+    font-size: 12px;
+    color: #ffff;
+  }
+}
+
+/* footer of profile section*/
+.footer-button {
+  text-align: right;
+  margin-top: 25px;
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+}

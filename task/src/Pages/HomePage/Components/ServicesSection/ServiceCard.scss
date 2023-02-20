@@ -1,0 +1,76 @@
+@import "../../../../assests/styles/variables.scss";
+@import "../../../../assests/styles/breakpoints.scss";
+/*/.card-image {
+    
+    
+}*/
+.card-holder {
+  padding: 60px 36px;
+  color: $white;
+  @include breakpoint(medium) {
+    padding: 35px 36px;
+    color: $white;
+  }
+
+  img {
+    max-width: 75px;
+    max-height: 67px;
+    margin-bottom: 38px;
+    @include breakpoint(medium) {
+      max-width: 50px;
+      max-height: 50px;
+    }
+  }
+
+  h6 {
+    font-size: 20px;
+    @include breakpoint(medium) {
+      font-size: 15px;
+    }
+  }
+  p {
+    font-size: 14px;
+    @include breakpoint(medium) {
+      font-size: 12px;
+    }
+  }
+  button {
+    border: 2px solid $white;
+    color: $white;
+    background-color: transparent;
+    padding: 10px 23px;
+    border-radius: $borderRadius;
+    font-size: $paraSize;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}
+/*.card-holder h6 {
+    
+}*/
+/*.card-holder p {
+    
+}*/
+/*.ReadMorebtn {
+   
+}*/
+/*.ReadMorebtn:hover{
+    
+}*/
+
+/*@media (max-width: 768px) {
+    .card-image {
+        
+    }
+    .card-holder {
+        
+    }
+    .card-holder h6 {
+        
+    }
+    .card-holder p {
+        
+    }
+    }*/
